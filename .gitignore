@@ -1,0 +1,6 @@
+Library/
+.vs/
+obj/
+Temp/
+Packages/
+Logs/Packages-Update.log

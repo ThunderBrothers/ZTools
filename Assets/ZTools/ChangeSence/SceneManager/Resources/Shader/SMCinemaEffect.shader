@@ -1,3 +1,5 @@
+// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
 Shader "Scene Manager/Cinema Effect" {
 	Properties {
 		_TintOffset ("Tint Offset", range(0,1)) = 0		// 0 == color, 1 == gray
@@ -19,7 +21,7 @@ Shader "Scene Manager/Cinema Effect" {
 	
 	v2f vert(appdata_full v) {
 		v2f o;	
-		o.pos = mul (UNITY_MATRIX_MVP, v.vertex);	
+		o.pos = UnityObjectToClipPos (v.vertex);	
 		o.uv.xy = TRANSFORM_TEX(v.texcoord, _ScreenContent);	
 		#if UNITY_UV_STARTS_AT_TOP
 		o.uv.y = 1 - o.uv.y;

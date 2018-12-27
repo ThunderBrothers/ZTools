@@ -1,3 +1,5 @@
+// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
 // 
 // Generic backbuffer copy effect. Used for many transitions.
 // Draws the given geometry using a texture which contains
@@ -24,7 +26,7 @@ Shader "Scene Manager/Back Buffer Copy Mobile" {
 	
 	v2f vert(appdata_full v) {
 		v2f o;
-		o.pos = mul (UNITY_MATRIX_MVP, v.vertex);	
+		o.pos = UnityObjectToClipPos (v.vertex);	
 		o.uv.xy = TRANSFORM_TEX(v.texcoord, _ScreenContent);
 		#if UNITY_UV_STARTS_AT_TOP
 		o.uv.y = 1 - o.uv.y;

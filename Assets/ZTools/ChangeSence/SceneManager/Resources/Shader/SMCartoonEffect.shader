@@ -1,3 +1,5 @@
+// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
 Shader "Scene Manager/Cartoon Effect" {
 	Properties {
 	    _BorderColor ("Border Color", Color) = (.5,0,0,1)
@@ -24,7 +26,7 @@ Shader "Scene Manager/Cartoon Effect" {
 	
 	v2f vert(appdata_full v) {
 		v2f o;	
-		o.pos = mul (UNITY_MATRIX_MVP, v.vertex);	
+		o.pos = UnityObjectToClipPos (v.vertex);	
 		o.uv.xy = TRANSFORM_TEX(v.texcoord, _Background);			
 		#if UNITY_UV_STARTS_AT_TOP
 		o.uv.y = 1 - o.uv.y;
