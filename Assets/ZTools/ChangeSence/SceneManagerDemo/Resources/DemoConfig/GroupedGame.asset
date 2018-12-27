@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05eefa0a8d36148169d6634976488b14, type: 1}
+  m_Name: GroupedGame
+  activeConfiguration: 0
+  levels:
+  - Level1
+  - Level2
+  - Level3
+  - Level4
+  screens:
+  - Intro
+  - MainMenu
+  - LevelSelectionMenu
+  - Cutscene
+  firstScreen: Intro
+  firstScreenAfterLevel: MainMenu
+  _guid: ef017f4a-8a78-4135-b152-b2bb50ff1f0c
+  groups:
+  - Easy Levels
+  - Hard Levels
+  groupOffset: 0000000002000000
+  actionAfterGroup: 1
+  firstScreenAfterGroup: Cutscene

@@ -1,0 +1,7 @@
+工具源自 
+  	 https://www.cnblogs.com/xxxtony/p/7650430.html
+
+更有意思的一个
+Unity中查找脚本被哪些Prefab或场景引用
+
+ 	https://www.cnblogs.com/cynchanpin/p/7127724.html

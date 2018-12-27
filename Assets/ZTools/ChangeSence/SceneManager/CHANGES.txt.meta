@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: ba175a0be3d3f42b2931543ee3f36904
+labels:
+- scene
+- manager
+- level
+- game
+- transition
+- build
+- progress
+- user
+- player
+- savegame
+- configuration
+- Transition
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

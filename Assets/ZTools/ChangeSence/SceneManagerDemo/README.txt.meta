@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: ad349621bd1849544af3bf362a1851f6
+labels:
+- scene
+- manager
+- level
+- game
+- transition
+- build
+- progress
+- user
+- player
+- savegame
+- configuration
+TextScriptImporter:
+  userData: 
