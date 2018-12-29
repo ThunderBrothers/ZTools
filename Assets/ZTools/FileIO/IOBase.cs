@@ -14,7 +14,7 @@ namespace ZTools.FileIO
         /// </summary>
         /// <param name="path">路径</param>
         /// <param name="content">写入内容</param>
-        public static void SaveFileByString(string path,string content)
+        public static void WriteFileText(string path,string content)
         {
             if (!File.Exists(path))
             {
@@ -29,7 +29,7 @@ namespace ZTools.FileIO
         /// </summary>
         /// <param name="path">路径</param>
         /// <returns>返回文件的字符串</returns>
-        public static string LoadFileForString(string path)
+        public static string ReadFileText(string path)
         {
             if (!File.Exists(path))
                 return null;

@@ -99,6 +99,7 @@ namespace ZTools.ZMath
             return tempT;
         }
     }
+    #region 比较器模板 List.Sort排序模板 IComparer比较器
     //比较器模板 
     //按照给定List根据元素GameObject的大小排序  从小到大
     public class ZComparerTemplate : IComparer<GameObject>
@@ -116,5 +117,57 @@ namespace ZTools.ZMath
             return y.transform.localScale.x.CompareTo(x.transform.localScale.x);
         }
     }
+    #endregion
+
+    #region UserState两种List.Sort排序模板 IComparer比较器和IComparable类内定义比较
+    /// <summary>
+    /// 对自定义类型比较
+    /// IComparer操作两个参数的比较排序Compare
+    /// </summary>
+    public class ZUserStateComparable : IComparer<UserState> {
+        public int Compare(UserState UserX, UserState UserY) {
+            if (UserY.editing)
+                return 1;
+            else if (UserX.editing && !UserY.editing)
+                return -1;
+            else
+                return 1;
+        }
+    }
+    /// <summary>
+    /// 自定义类型
+    /// IComparable操作一个参数的比较排序CompareTo
+    /// </summary>
+    public class UserState : IComparable {
+        public string userID;
+        public bool editing;
+        public string userName;
+
+        public UserState(string ID, bool isediting) {
+            userID = ID;
+            editing = isediting;
+        }
+        /// <summary>
+        /// 说明 按照User.edition值优先排序
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        public int CompareTo(object obj) {
+            UserState UserY = obj as UserState;
+            //UserY在操作上移一位
+            if (UserY.editing)
+                return 1;
+            //UserX在editing并且UserY不在操editing，UserY下移一位
+            //前者改为在editing后顶替后者
+            else if (editing && !UserY.editing)
+                return -1;
+            //多种情况 1.UserX和UserY同时不在在editing
+            //         2.UserX不在editing和UserY在editing
+            //         3.UserX在editing和UserY时在editing     
+            else
+                return 1;
+        }
+    }
+    #endregion
 }
 

@@ -1,0 +1,100 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 10.04.2018 15:47:44
+
+newmtl Engine_11
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 1.0000 1.0000 1.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.4500 0.4500 0.4500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka AeroPlane-Engine-11Ambient Occlusion _MR_.jpg
+	map_Kd AeroPlane-Engine-11Ambient Occlusion _MR_.jpg
+
+newmtl Engine_03
+	Ns 50.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 1.0000 1.0000 1.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.4500 0.4500 0.4500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka AeroPlane-Engine-03Ambient Occlusion _MR_.jpg
+	map_Kd AeroPlane-Engine-03Ambient Occlusion _MR_.jpg
+
+newmtl Engine_10
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 1.0000 1.0000 1.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.4500 0.4500 0.4500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka AeroPlane-Engine-10Ambient Occlusion _MR_.jpg
+	map_Kd AeroPlane-Engine-10Ambient Occlusion _MR_.jpg
+
+newmtl Engine_12
+	Ns 50.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 1.0000 1.0000 1.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.4500 0.4500 0.4500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka AeroPlane-Engine-12Ambient Occlusion _MR_.jpg
+	map_Kd AeroPlane-Engine-12Ambient Occlusion _MR_.jpg
+
+newmtl Engine_13
+	Ns 50.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 1.0000 1.0000 1.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.4500 0.4500 0.4500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka AeroPlane-Engine-13Ambient Occlusion _MR_.jpg
+	map_Kd AeroPlane-Engine-13Ambient Occlusion _MR_.jpg
+
+newmtl Engine_15
+	Ns 50.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 1.0000 1.0000 1.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.4500 0.4500 0.4500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka AeroPlane-Engine-15Ambient Occlusion _MR_.jpg
+	map_Kd AeroPlane-Engine-15Ambient Occlusion _MR_.jpg
+
+newmtl Engine_21
+	Ns 50.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 1.0000 1.0000 1.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.4500 0.4500 0.4500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka AeroPlane-Engine-21Ambient Occlusion _MR_.jpg
+	map_Kd AeroPlane-Engine-21Ambient Occlusion _MR_.jpg

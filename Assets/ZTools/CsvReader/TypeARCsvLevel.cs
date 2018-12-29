@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using ZTools.CsvReader;
 
 [System.Serializable]
 public class TypeARCsvLevel : CsvBase {

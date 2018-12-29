@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEditor;
 using System.Collections.Generic;
 
-namespace ZTools.Path
+namespace ZTools.ZPath
 {
 	[CustomEditor(typeof(ZPath))]
 	public class ZPathEditor : Editor {

@@ -1,7 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CsvBase
+namespace ZTools.CsvReader
 {
-    public CsvBase(){}  
+    public class CsvBase
+    {
+        public CsvBase() { }
+    }
 }
+

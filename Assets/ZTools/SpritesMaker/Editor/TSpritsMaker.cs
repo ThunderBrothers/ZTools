@@ -173,7 +173,7 @@ namespace ZTools.SpritsMaker
             AnimationClip clip = new AnimationClip();
 #if UNITY_5
 #else
-AnimationUtility.SetAnimationType (clip, ModelImporterAnimationType.Generic);
+//AnimationUtility.SetAnimationType (clip, ModelImporterAnimationType.Generic);
 #endif
             //编辑曲线的结合
             EditorCurveBinding curveBinding = new EditorCurveBinding();

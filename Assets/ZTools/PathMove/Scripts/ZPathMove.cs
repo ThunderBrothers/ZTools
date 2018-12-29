@@ -2,7 +2,7 @@
 using System.Collections;
 using System;
 
-namespace ZTools.Path
+namespace ZTools.ZPath
 {
     //表现类型
     public enum ZActionType : int

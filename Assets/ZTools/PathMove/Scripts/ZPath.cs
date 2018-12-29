@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System;
 
-namespace ZTools.Path
+namespace ZTools.ZPath
 {
 	public class ZPath : MonoBehaviour {
 		public bool isInitialized = false;

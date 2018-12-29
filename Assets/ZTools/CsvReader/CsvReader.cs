@@ -15,6 +15,11 @@ namespace ZTools.CsvReader
         /// Value 表格数据部分的单元格数据包括ID
         /// </summary>
         private Dictionary<string, string[]> _data = new Dictionary<string, string[]>();
+        /// <summary>
+        /// 存放读取到的表格第一行
+        /// 也就是第一类的具体参数名称
+        /// 方便做类型赋值时的对比
+        /// </summary>
         private string[] _keys;
 
         /// <summary>
@@ -43,7 +48,7 @@ namespace ZTools.CsvReader
         /// </summary>
         /// <typeparam name="T">泛型</typeparam>
         /// <param name="id">表格配置第一列的ID</param>
-        /// <returns></returns>
+        /// <returns>返回对应包含数据的类</returns>
         public T GetData<T>(string id) where T : class, new()
         {
             if (!_data.ContainsKey(id))
@@ -52,6 +57,7 @@ namespace ZTools.CsvReader
             }
             T t = new T();
             string[] d = _data[id];
+            //给类赋值
             for (int i = 0; i < _keys.Length; i++)
             {
                 System.Reflection.FieldInfo info = t.GetType().GetField(_keys[i]);

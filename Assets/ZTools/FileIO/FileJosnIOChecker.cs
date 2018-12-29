@@ -8,12 +8,8 @@ namespace ZTools.FileIO
         public string path;
         public string reader;
         public string writer;
-        public JsonDataBase Json;
+        public AnimatorDatas Json;
 
-        public void Start()
-        {
-
-        }
         public void Save()
         {
             if (writer.Length <= 5)
@@ -21,16 +17,20 @@ namespace ZTools.FileIO
                 return;
             }
             writer = JsonUtility.ToJson(Json);
-            IOBase.WriteByFileStream(path, writer);
+            //IOBase.WriteByFileStream(path, writer);
+            IOBase.WriteFileText(path, writer);
         }
         public void Load()
         {
             reader = IOBase.ReadByFileStream(path);
-            Json = JsonUtility.FromJson<JsonDataBase>(reader);
+            writer = reader;
+            Json = JsonUtility.FromJson<AnimatorDatas>(reader);
         }
         public void Claer()
         {
             Json = null;
+            reader = null;
+            writer = null;
         }
     }
 
@@ -41,8 +41,8 @@ namespace ZTools.FileIO
         void OnEnable()
         {
             obj = (FileJosnIOChecker)target;
-            obj.path = Application.dataPath;
-            obj.path += "/ZTools/FileIO/JsonData.json";
+            //obj.path = Application.dataPath;
+            //obj.path += "/ZTools/FileIO/JsonData.json";
         }
         public override void OnInspectorGUI()
         {
