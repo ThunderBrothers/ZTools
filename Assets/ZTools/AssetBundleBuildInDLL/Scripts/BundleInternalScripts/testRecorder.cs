@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CubeScript : MonoBehaviour {
+public class testRecorder : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -13,4 +13,7 @@ public class CubeScript : MonoBehaviour {
 	void Update () {
 		
 	}
+    public void LogSomething() {
+        Debug.Log("Log");
+    }
 }

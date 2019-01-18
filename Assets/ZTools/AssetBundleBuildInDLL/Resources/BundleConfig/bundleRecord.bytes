@@ -1,0 +1,10 @@
+Tar
+4
+BundleEventTrigger
+Tar/Trigger--D[0]
+SetActive_True
+Tar/CubeTrigger--D[0]->SetActive_True[0]->SetActive_False[1]
+SetActive_False
+Tar/CubeTrigger--D[0]->SetActive_True[0]->SetActive_False[1]
+SetActive_Toggle
+Tar/SphereTrigger--D[0]->SetActive_Toggle[2]
