@@ -5,3 +5,5 @@ Temp/
 Packages/
 Logs/Packages-Update.log
 ZToolsGit.sln
+Assembly-CSharp.csproj
+Assembly-CSharp-Editor.csproj
