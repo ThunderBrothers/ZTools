@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
+#region 编辑时或保存时触发器Json信息类
 /// <summary>
 /// 所有Trigger和Desinger的对应关系配置
 /// </summary>
@@ -26,6 +26,9 @@ public class triggerToDesingerJson {
 /// 单个设计师信息
 /// </summary>
 public class BundleEventTriggerDesignerJson {
+    /// <summary>
+    /// 单个设计师上所有触发事件信息
+    /// </summary>
     public List<BundleEventTriggerJson> bundleEventTriggerJsons = new List<BundleEventTriggerJson>();
 }
 /// <summary>
@@ -33,26 +36,52 @@ public class BundleEventTriggerDesignerJson {
 /// </summary>
 [Serializable]
 public class BundleEventTriggerJson {
+    /// <summary>
+    /// 执行物体名称
+    /// </summary>
     public string target;
+    /// <summary>
+    /// 执行函数名称
+    /// </summary>
     public string method;
+    /// <summary>
+    /// 触发类型Index
+    /// </summary>
     public int triggerType;
 }
+#endregion
+
+
+#region 设计时或运行时触发器信息类
 /// <summary>
 /// 单个触发事件信息
 /// </summary>
 [Serializable]
 public class BundleEventTriggerInfo {
     public BundleEventTriggerInfo() {
-      
+
     }
     public BundleEventTriggerInfo(GameObject _target, UnityEngine.Object _method, int _triggerType) {
         target = _target;
         method = _method;
         triggerType = (BundleEventTriggerType)_triggerType;
     }
-
+    public BundleEventTriggerInfo(GameObject _target, UnityEngine.Object _method, BundleEventTriggerType _triggerType) {
+        target = _target;
+        method = _method;
+        triggerType = _triggerType;
+    }
+    /// <summary>
+    /// 执行物体
+    /// </summary>
     public GameObject target;
+    /// <summary>
+    /// 执行脚本
+    /// </summary>
     public UnityEngine.Object method;
+    /// <summary>
+    /// 触发类型
+    /// </summary>
     public BundleEventTriggerType triggerType;
 }
 /// <summary>
@@ -63,3 +92,4 @@ public enum BundleEventTriggerType {
     GazeOff = 1,
     GazeClick = 2,
 }
+#endregion

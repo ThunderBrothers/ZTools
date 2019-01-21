@@ -22,7 +22,15 @@ public class BundleEventTrigger : MonoBehaviour, IPointerClickHandler, IEventSys
             selfBundleEventTriggerInfo.Add(info);
         }
     }
+
     public void AddTriggerByElement(GameObject _target, UnityEngine.Object _method, int _triggerType) {
+        BundleEventTriggerInfo temp = new BundleEventTriggerInfo(_target, _method, _triggerType);
+        if (temp != null)
+        {
+            selfBundleEventTriggerInfo.Add(temp);
+        }
+    }
+    public void AddTriggerByElement(GameObject _target, UnityEngine.Object _method, BundleEventTriggerType _triggerType) {
         BundleEventTriggerInfo temp = new BundleEventTriggerInfo(_target, _method, _triggerType);
         if (temp != null)
         {

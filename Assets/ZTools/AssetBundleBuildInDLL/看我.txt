@@ -15,28 +15,65 @@ ZTools致力于快速的完成重复性工作及提供游戏内置的各种工具性框架
 3.提供测试场景
 4.提供打包界面
 
+暗夜精灵jj 在2019.1.21更新v2.0版本
+————————————————————————————————————————————————————————————————————
+******** v2.0
+
+BundleEventTrigger版 
+1.增加新组件BundleEventTriggerDesigner事件设计师，类似EventTrigger，使用文档详见pdf
+2.增加BundleEventTrigger触发组件，这是运行时在执行事件的组件，打包过程中会把BundleEventTriggerDesigner替换成BundleEventTrigger
+3.提供测试场景
+4.提供打包界面
+5.提供联调测试资源
+
 
 ————————————————————————————————————————————————————————————————————
 说明;
-1.制作时AssetBundle包
-	1.1 被打包的资源包括：选中物体及依赖资源，BundleRecord配置文件，output文件
-		1.1.1 BundleRecord是.bytes文件可以用文本编辑器打开，以行为间隔，Prefab名称，脚本数，脚本名，脚本挂载物体索引，脚本名，脚本挂载物体索引。。。。。
-		1.1.2 output是安装目录Unity/Editor/Data/MonoBleedingEdge/bin/mcs.bat处理后的dll文件的二进制转化
-		1.1.3 生成的文件不附带minsfast文件
-		1.1.4 代码流程 脚本Process.Start("cmd", cmd)转化生成output文件，遍历主物体生成BundleRecord索引文件，主物体及两个文件生成包
-2.读取AssetBundle包(LoadAssetBundle)
-	1.1 加载所有包内Shader保存到List
-	1.2 ResetAllMaterial读取包内Material和记录的Shader匹配，新建Material找工程内Shader若无则给Material赋值List的Shader
-	1.3 AssetBundle.LoadAsset<TextAsset>("bundleRecord")加载bundleRecord文件，按照制作时的规则给List(gameObjectNames和scriptNames)做对一对一记录
-	1.4 AssetBundle.LoadAsset<TextAsset>("output")加载output文件， 
-		1.4.1 System.Reflection.Assembly dll = null; 
-		1.4.2 生成dll dll = System.Reflection.Assembly.Load(asset.bytes);
-        1.4.3 得到某个脚本 System.Type t = dll.GetType(scriptNames[i])
-		1.4.4 给某个物体添加脚本组件 trans.gameObject.AddComponent(t);
-	1.5 AssetBundle.Unload(false)释放资源
-3.使用
-	1.1 直接生成物体就会对应的功能自动添加
-	1.2 简单附带逻辑版的资源热更新
+1.AssetBundle包内容
+	被打包的资源包括：选中物体及依赖资源，bundleRecord配置文件，output文件
+		1.1 选中物体及依赖资源
+				由Unity自动获取依赖
+		1.2 BundleRecord.bytes
+				文件可以用文本编辑器打开，以行为间隔，Prefab名称，脚本数，[脚本名，脚本挂载物体索引]，[脚本名，脚本挂载物体索引]。。。。。
+		1.3 eventTriggerConfig.bytes
+				一个json格式的二级制文件，详见AllTriggerToDesingerJson脚本，设计时或运行时触发器信息类
+		1.4 output.bytes
+				安装目录Unity/Editor/Data/MonoBleedingEdge/bin/mcs.bat处理后的dll文件的二进制文件
+2.制作AssetBundle包逻辑流程(BundleBuilder)
+	打包界面
+		2.1 设置3和保存路径，会保存在config.bytes文件内
+		2.2 填入打包Prefab，选择打包平台
+		2.3 打包检查，[CheckCollider]->检查Prefab物体上所有子物体有Mesh组件的是否都有Collider，[CheckOtherConfig]->检查其他配置
+			  如果[CheckCollider]不通过则弹出提示框，3个选项
+		2.4 打包逻辑
+				[GenerateBundleTriggerSummary]->在生成记录摘要前配置BundleTrigger记录,会标记被操作物体(修改其名称，给其挂载对应执行脚本)
+				[GenerateScript]-> 处理脚本生成dll,使用Process.Start("cmd", cmd)转化生成output文件
+				[PreBuidleHandler]->打包前处理,销毁了BundleEventTriggerDesigner组件
+				[GenerateSummary]->生成加载引用记录,输出bundleRecord.bytes文件
+				[CreateEventTriggerInfoJsonConfig]->生成触发器读取值的json文件
+				[CalculateScale]->计算bundle包围盒大小
+				[OpenFile]->打包完成后自动打开目录
+	设计师组件界面(详见pdf文档)		
+	
+3.读取AssetBundle包(AssetBundleManager)
+	3.1 [LoadAssetBundle]加载物体及配置材质和shander，以及挂载脚本
+		3.1.1 加载所有包内Shader保存到List
+		3.1.2 ResetAllMaterial读取包内Material和记录的Shader匹配，新建Material找工程内Shader若无则给Material赋值List的Shader
+		3.1.3 AssetBundle.LoadAsset<TextAsset>("bundleRecord")加载bundleRecord文件，按照制作时的规则给List(gameObjectNames和scriptNames)做对一对一记录
+		3.1.4 AssetBundle.LoadAsset<TextAsset>("output")加载output文件， 
+		3.4.5 System.Reflection.Assembly dll = null; 
+		3.4.6 生成dll dll = System.Reflection.Assembly.Load(asset.bytes);
+		3.4.7 得到某个脚本 System.Type t = dll.GetType(scriptNames[i])
+		3.4.8 给某个物体添加脚本组件 trans.gameObject.AddComponent(t);
+	3.2 [LoadJsonForTrigger]加载Jsonw配置
+		3.2.1 加载eventTriggerConfig.bytes按照AllTriggerToDesingerJson加载成类
+		3.2.2 根据AllTriggerToDesingerJson信息在工程内还原制作前BundleEventTriggerInfo类信息，包括物体，函数，触发类型
+	3.3 [HandleJsonForTrigger]处理json文件，将json数据处理赋值给BundleEventTrigger组件
+		3.3.1 [TriggerAssignment]反射去调用针对BundleEventTrigger中某的初始化函数AddTriggerByElement,对selfBundleEventTriggerInfo的List增加元素
+		3.3.2 二种反射赋值方式，直接调用List.Add算内置，在打入dll的脚本内定义List的压入单个元素的初始化函数
+		1.5 AssetBundle.Unload(false)释放资源
+4. 资源卸载bundle.Unload(false);
+	
 	    
 
 ————————————————————————————————————————————————————————————————————
@@ -46,7 +83,36 @@ ZTools致力于快速的完成重复性工作及提供游戏内置的各种工具性框架
 3. Process.Start("cmd", cmd)打开外部程序及cmd字符串命令行写法
 4. AssetBundle打包后材质和Shader丢失物体处理 
 5. AssetBundle包数据多元化(能包含各种类型的文件)
-6. System.Reflection.Assembly dll = null;DLL的定义及使用
-7. System.Type t = dll.GetType(scriptNames[i]);trans.gameObject.AddComponent(t);在DLL中用内含的脚本名得到该脚本后以组件的形式添加给物体
+6. 反射在运行时的重要作用
+	6.1 加载二级制文件为dll
+		System.Reflection.Assembly dll = null;
+		dll = System.Reflection.Assembly.Load(asset.bytes);
+	6.2 根据名称挂载一个脚本
+	   System.Type t = dll.GetType(scriptNames[i]);
+       gameObject.AddComponent(t);
+	6.3 根据名称获取一个脚本
+            foreach (MonoBehaviour mb in targetobject.GetComponents<BundleEventInfoBase>())
+            {
+				//判断是否为继承关系，[mb is BundleEventInfoBase]也可以
+                if (mb.GetType().IsSubclassOf(typeof(BundleEventInfoBase)))
+                {
+                    BundleEventInfoBase ip = (BundleEventInfoBase)mb;
+                    ac.SupportPRS = ip.supportPRS();
+                }
+            }
+	6.4 获取一个重载方法，这里示范调用BundleEventTrigger类的AddTriggerByElement方法
+		 //t为上上面获取的组件，及BundleEventTrigger脚本
+		 Type type = t.GetType();
+		//反射获取重载的函数
+		//标记   获取BundleEventTriggerType参数的函数会获取不到，可能是不允许有自定义类型吧
+		//MethodInfo method = type.GetMethod("AddTriggerByElement", new Type[] { typeof(GameObject), typeof(UnityEngine.Object), typeof(BundleEventTriggerType) });
+		MethodInfo method = type.GetMethod("AddTriggerByElement", new Type[] { typeof(GameObject), typeof(UnityEngine.Object), typeof(int) });
+		for (int i = 0; i < triggerInfoCache[value].Count; i++)
+        {
+               object[] parameters = new object[] { triggerInfoCache[value][i].target, triggerInfoCache[value][i].method, triggerInfoCache[value][i].triggerType };
+               method.Invoke(t, parameters);
+         }
+
+7. 参考 Unity中利用C#的反射机制输出泛型类T及其内嵌List的属性值 https://blog.csdn.net/chy_xfn/article/details/82421255
 8. 读取注册表得到Unity安装路径 RegistryKey key = Registry.CurrentUser.OpenSubKey(@"Software\Unity Technologies\Installer\Unity");
 ————————————————————————————————————————————————————————————————————

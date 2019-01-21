@@ -276,13 +276,13 @@ namespace ZTools.AssetBundleBuildInDLL
                 AssetDatabase.Refresh();
                 if (hasMono)
                 {
-                    builds.Add((UnityEngine.Object)AssetDatabase.LoadAssetAtPath("Assets/Resources/BundleConfig/output.bytes", typeof(UnityEngine.TextAsset)));
+                    builds.Add((UnityEngine.Object)AssetDatabase.LoadAssetAtPath("Assets/ZTools/AssetBundleBuildInDLL/Resources/BundleConfig/output.bytes", typeof(UnityEngine.TextAsset)));
                 }
                 if (hasBundleTrigger)
                 {
-                    builds.Add((UnityEngine.Object)AssetDatabase.LoadAssetAtPath("Assets/Resources/BundleConfig/eventTriggerConfig.json", typeof(UnityEngine.TextAsset)));
+                    builds.Add((UnityEngine.Object)AssetDatabase.LoadAssetAtPath("Assets/ZTools/AssetBundleBuildInDLL/Resources/BundleConfig/eventTriggerConfig.json", typeof(UnityEngine.TextAsset)));
                 }
-                builds.Add((UnityEngine.Object)AssetDatabase.LoadAssetAtPath("Assets/Resources/BundleConfig/bundleRecord.bytes", typeof(UnityEngine.TextAsset)));
+                builds.Add((UnityEngine.Object)AssetDatabase.LoadAssetAtPath("Assets/ZTools/AssetBundleBuildInDLL/Resources/BundleConfig/bundleRecord.bytes", typeof(UnityEngine.TextAsset)));
                 string projectName = outputPath.Substring(outputPath.LastIndexOf("/") + 1, outputPath.LastIndexOf(".") - outputPath.LastIndexOf("/") - 1);
                 string dirPath = outputPath.Substring(0, outputPath.LastIndexOf("/"));
                 UnityEngine.Debug.Log("输出路径 " + dirPath + " projectName " + projectName);
