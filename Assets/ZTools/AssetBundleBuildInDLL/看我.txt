@@ -115,4 +115,5 @@ BundleEventTrigger版
 
 7. 参考 Unity中利用C#的反射机制输出泛型类T及其内嵌List的属性值 https://blog.csdn.net/chy_xfn/article/details/82421255
 8. 读取注册表得到Unity安装路径 RegistryKey key = Registry.CurrentUser.OpenSubKey(@"Software\Unity Technologies\Installer\Unity");
+9. BundleEventTrigger代码参考EventTrigger源码
 ————————————————————————————————————————————————————————————————————

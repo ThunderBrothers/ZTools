@@ -5,16 +5,19 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Networking;
 
-public class BundleTest : MonoBehaviour {
+namespace ZTools.AssetBundleBuildInDLL {
+    public class BundleTest : MonoBehaviour {
 
 
-    public GameObject obj;
+        public GameObject obj;
 
 
-    // Use this for initialization
-    void Start() {
+        // Use this for initialization
+        void Start() {
 
-        obj.SendMessage("LogSomething", SendMessageOptions.RequireReceiver);
+            obj.SendMessage("LogSomething", SendMessageOptions.RequireReceiver);
+        }
+
     }
-
 }
+
