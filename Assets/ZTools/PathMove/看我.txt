@@ -1,34 +1,34 @@
-¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
-ZToolsÖÂÁ¦ÓÚ¿ìËÙµÄÍê³ÉÖØ¸´ÐÔ¹¤×÷¼°Ìá¹©ÓÎÏ·ÄÚÖÃµÄ¸÷ÖÖ¹¤¾ßÐÔ¿ò¼Ü
+ï»¿â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”
+ZToolsè‡´åŠ›äºŽå¿«é€Ÿçš„å®Œæˆé‡å¤æ€§å·¥ä½œåŠæä¾›æ¸¸æˆå†…ç½®çš„å„ç§å·¥å…·æ€§æ¡†æž¶
 
 
-°µÒ¹¾«Áéjj ÔÚ2018.5.11¸üÐÂv1.1°æ±¾
-¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+æš—å¤œç²¾çµjj åœ¨2018.5.11æ›´æ–°v1.1ç‰ˆæœ¬
+â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”
 
-¸ÅÊö£ºÓÃÓÚ¿ìËÙÉú³ÉÕÛÏÖÂ·¾¶µÄ¹¤¾ß£¬²¢ÇÒÌá¹©¹ÜµÀÔË¶¯Ä£Ê½£¬ÓÃÓÚ°´ÏßÂ·Ëæ»úÔË¶¯£¬
-	  µ¼Èë¸½´øÑÝÊ¾³¡¾°ZPathMove£¬ÔÚ´°¿Ú¡°ZTools/CreatZPath¡±Éú³ÉZPathÂ·Ïß£¬
-	  ÉèÖÃPrefabµÄZPathºÍZActionType¼´¿ÉÊµÏÖ°´Â·ÏßËæ»ú¹ÜµÀÔË¶¯ºÍ°´µã·Ö±ð×ö
-	  ²Ù×÷µÄ¹¦ÄÜ¡£
-±à¼­Ïî£ºZPathEditorºÍZPathÉú³É»ù±¾µÄÂ·Ïß¼°µ÷ÊÔÑ¡Ïî£¬¿ÉÔÚZPathMove½Å±¾ÖÐÌí¼Ó¾ßÌåÒªÊµÏÖµÄ¹¦ÄÜ Èç£ºÔö¼ÓÐÐÎªZActionType£¬ÊµÏÖ½Ó¿Ú OnPathStart()
-		OnPathComplete()£¬OnActionMove()£¬OnActionStop()£¬¾ßÌåÓÃ·¨ºÍDoTweenµÄ²î²»¶à¡£
+æ¦‚è¿°ï¼šç”¨äºŽå¿«é€Ÿç”ŸæˆæŠ˜çŽ°è·¯å¾„çš„å·¥å…·ï¼Œå¹¶ä¸”æä¾›ç®¡é“è¿åŠ¨æ¨¡å¼ï¼Œç”¨äºŽæŒ‰çº¿è·¯éšæœºè¿åŠ¨ï¼Œ
+	  å¯¼å…¥é™„å¸¦æ¼”ç¤ºåœºæ™¯ZPathMoveï¼Œåœ¨çª—å£â€œZTools/CreatZPathâ€ç”ŸæˆZPathè·¯çº¿ï¼Œ
+	  è®¾ç½®Prefabçš„ZPathå’ŒZActionTypeå³å¯å®žçŽ°æŒ‰è·¯çº¿éšæœºç®¡é“è¿åŠ¨å’ŒæŒ‰ç‚¹åˆ†åˆ«åš
+	  æ“ä½œçš„åŠŸèƒ½ã€‚
+ç¼–è¾‘é¡¹ï¼šZPathEditorå’ŒZPathç”ŸæˆåŸºæœ¬çš„è·¯çº¿åŠè°ƒè¯•é€‰é¡¹ï¼Œå¯åœ¨ZPathMoveè„šæœ¬ä¸­æ·»åŠ å…·ä½“è¦å®žçŽ°çš„åŠŸèƒ½ å¦‚ï¼šå¢žåŠ è¡Œä¸ºZActionTypeï¼Œå®žçŽ°æŽ¥å£ OnPathStart()
+		OnPathComplete()ï¼ŒOnActionMove()ï¼ŒOnActionStop()ï¼Œå…·ä½“ç”¨æ³•å’ŒDoTweençš„å·®ä¸å¤šã€‚
 
-¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”
 ******** v1.0
 
-»ù±¾°æ 
-******** v1.1¸üÐÂ
+åŸºæœ¬ç‰ˆ 
+******** v1.1æ›´æ–°
 
-1.Ôö¼ÓZPathEditorµÄµ÷ÊÔÏÂµÄShowNodeÑ¡Ôñ
+1.å¢žåŠ ZPathEditorçš„è°ƒè¯•ä¸‹çš„ShowNodeé€‰æ‹©
 
-******** v1.2 ¼Æ»®
-1.ZPathEditor½çÃæµ÷ÕûµÄ¸üÈËÐÔ»¯ ÈçUnity±ê×¼×ÊÔ´µÄWayPoints ÇúÏß£¿£¿£¿
-2.¿ªÆôdebugÄ£Ê½ÓÐ¿ÉÄÜÐ§ÂÊ²»¸ß
-3.ÅäÖÃµÄZBehaviorÊýÁ¿²»µÃÉÙÓÚÑ¡ÔñµÄÂ·Ïß½Úµã¸öÊýÓÅ»¯ 
-4.ÓÅ»¯ZPathMoveÎïÌåµÄLookAtÎ»ÖÃ·½Ê½ 1.0°æ±¾ÊÇÓÃµ½ÁËDoTwenn²å¼þµ«ÊÇ×÷Îª¶ÀÁ¢µÄ¹¤¾ß²»ÄÜ¸½´øÆäËû²å¼þ
+******** v1.2 è®¡åˆ’
+1.ZPathEditorç•Œé¢è°ƒæ•´çš„æ›´äººæ€§åŒ– å¦‚Unityæ ‡å‡†èµ„æºçš„WayPoints æ›²çº¿ï¼Ÿï¼Ÿï¼Ÿ
+2.å¼€å¯debugæ¨¡å¼æœ‰å¯èƒ½æ•ˆçŽ‡ä¸é«˜
+3.é…ç½®çš„ZBehavioræ•°é‡ä¸å¾—å°‘äºŽé€‰æ‹©çš„è·¯çº¿èŠ‚ç‚¹ä¸ªæ•°ä¼˜åŒ– 
+4.ä¼˜åŒ–ZPathMoveç‰©ä½“çš„LookAtä½ç½®æ–¹å¼ 1.0ç‰ˆæœ¬æ˜¯ç”¨åˆ°äº†DoTwennæ’ä»¶ä½†æ˜¯ä½œä¸ºç‹¬ç«‹çš„å·¥å…·ä¸èƒ½é™„å¸¦å…¶ä»–æ’ä»¶
 
-¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
-ËµÃ÷;
-1.ÔÚ´°¿Ú¡°ZTools/CreatZPath¡±Éú³ÉZPathÂ·Ïß
-2.¸øÒª¶¯µÄÎïÌåÌí¼ÓZPathMove½Å±¾
-3.ÅäÖÃZPathMove²ÎÊý ×¢Òâ£ºÅäÖÃµÄZBehaviorÊýÁ¿²»µÃÉÙÓÚÑ¡ÔñµÄÂ·Ïß½Úµã¸öÊý
-4.ÔÚÔËÐÐÄ£Ê½²é¿´Ð§¹û£¬¿ªÆôZÉÏµÄdebugÄ£Ê½²é¿´ÎïÌå°´Â·ÏßÔË¶¯µÄ×´Ì¬
+â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”
+è¯´æ˜Ž;
+1.åœ¨çª—å£â€œZTools/CreatZPathâ€ç”ŸæˆZPathè·¯çº¿
+2.ç»™è¦åŠ¨çš„ç‰©ä½“æ·»åŠ ZPathMoveè„šæœ¬
+3.é…ç½®ZPathMoveå‚æ•° æ³¨æ„ï¼šé…ç½®çš„ZBehavioræ•°é‡ä¸å¾—å°‘äºŽé€‰æ‹©çš„è·¯çº¿èŠ‚ç‚¹ä¸ªæ•°
+4.åœ¨è¿è¡Œæ¨¡å¼æŸ¥çœ‹æ•ˆæžœï¼Œå¼€å¯Zä¸Šçš„debugæ¨¡å¼æŸ¥çœ‹ç‰©ä½“æŒ‰è·¯çº¿è¿åŠ¨çš„çŠ¶æ€

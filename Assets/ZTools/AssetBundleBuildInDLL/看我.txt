@@ -1,110 +1,110 @@
-¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
-ZToolsÖÂÁ¦ÓÚ¿ìËÙµÄÍê³ÉÖØ¸´ĞÔ¹¤×÷¼°Ìá¹©ÓÎÏ·ÄÚÖÃµÄ¸÷ÖÖ¹¤¾ßĞÔ¿ò¼Ü
+ï»¿â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”
+ZToolsè‡´åŠ›äºå¿«é€Ÿçš„å®Œæˆé‡å¤æ€§å·¥ä½œåŠæä¾›æ¸¸æˆå†…ç½®çš„å„ç§å·¥å…·æ€§æ¡†æ¶
 
 
-°µÒ¹¾«Áéjj ÔÚ2018.10.24¸üĞÂv1.0°æ±¾
-¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+æš—å¤œç²¾çµjj åœ¨2018.10.24æ›´æ–°v1.0ç‰ˆæœ¬
+â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”
 
-¸ÅÊö£ºµ¥¸öPrefabµÄAssetBundle°ü´òÈë¼òµ¥´úÂëÒÔ¼°Éú³ÉÅäÖÃ¹¤¾ß
-¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+æ¦‚è¿°ï¼šå•ä¸ªPrefabçš„AssetBundleåŒ…æ‰“å…¥ç®€å•ä»£ç ä»¥åŠç”Ÿæˆé…ç½®å·¥å…·
+â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”
 ******** v1.0
 
-»ù±¾°æ 
-1.¶ÔÒ»¸öPrefabÎÄ¼ş½øĞĞ´ò°ü£¬½«Æä´úÂëÉú³ÉDLL´òÈëAssetBundle°üÄÚ
-2.¼ÓÔØAssetBundle°ü½«ÆäÄÚµÄPrefab»¹Ô­
-3.Ìá¹©²âÊÔ³¡¾°
-4.Ìá¹©´ò°ü½çÃæ
+åŸºæœ¬ç‰ˆ 
+1.å¯¹ä¸€ä¸ªPrefabæ–‡ä»¶è¿›è¡Œæ‰“åŒ…ï¼Œå°†å…¶ä»£ç ç”ŸæˆDLLæ‰“å…¥AssetBundleåŒ…å†…
+2.åŠ è½½AssetBundleåŒ…å°†å…¶å†…çš„Prefabè¿˜åŸ
+3.æä¾›æµ‹è¯•åœºæ™¯
+4.æä¾›æ‰“åŒ…ç•Œé¢
 
-°µÒ¹¾«Áéjj ÔÚ2019.1.21¸üĞÂv2.0°æ±¾
-¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+æš—å¤œç²¾çµjj åœ¨2019.1.21æ›´æ–°v2.0ç‰ˆæœ¬
+â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”
 ******** v2.0
 
-BundleEventTrigger°æ 
-1.Ôö¼ÓĞÂ×é¼şBundleEventTriggerDesignerÊÂ¼şÉè¼ÆÊ¦£¬ÀàËÆEventTrigger£¬Ê¹ÓÃÎÄµµÏê¼ûpdf
-2.Ôö¼ÓBundleEventTrigger´¥·¢×é¼ş£¬ÕâÊÇÔËĞĞÊ±ÔÚÖ´ĞĞÊÂ¼şµÄ×é¼ş£¬´ò°ü¹ı³ÌÖĞ»á°ÑBundleEventTriggerDesignerÌæ»»³ÉBundleEventTrigger
-3.Ìá¹©²âÊÔ³¡¾°
-4.Ìá¹©´ò°ü½çÃæ
-5.Ìá¹©Áªµ÷²âÊÔ×ÊÔ´
+BundleEventTriggerç‰ˆ 
+1.å¢åŠ æ–°ç»„ä»¶BundleEventTriggerDesigneräº‹ä»¶è®¾è®¡å¸ˆï¼Œç±»ä¼¼EventTriggerï¼Œä½¿ç”¨æ–‡æ¡£è¯¦è§pdf
+2.å¢åŠ BundleEventTriggerè§¦å‘ç»„ä»¶ï¼Œè¿™æ˜¯è¿è¡Œæ—¶åœ¨æ‰§è¡Œäº‹ä»¶çš„ç»„ä»¶ï¼Œæ‰“åŒ…è¿‡ç¨‹ä¸­ä¼šæŠŠBundleEventTriggerDesigneræ›¿æ¢æˆBundleEventTrigger
+3.æä¾›æµ‹è¯•åœºæ™¯
+4.æä¾›æ‰“åŒ…ç•Œé¢
+5.æä¾›è”è°ƒæµ‹è¯•èµ„æº
 
 
-¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
-ËµÃ÷;
-1.AssetBundle°üÄÚÈİ
-	±»´ò°üµÄ×ÊÔ´°üÀ¨£ºÑ¡ÖĞÎïÌå¼°ÒÀÀµ×ÊÔ´£¬bundleRecordÅäÖÃÎÄ¼ş£¬outputÎÄ¼ş
-		1.1 Ñ¡ÖĞÎïÌå¼°ÒÀÀµ×ÊÔ´
-				ÓÉUnity×Ô¶¯»ñÈ¡ÒÀÀµ
+â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”
+è¯´æ˜;
+1.AssetBundleåŒ…å†…å®¹
+	è¢«æ‰“åŒ…çš„èµ„æºåŒ…æ‹¬ï¼šé€‰ä¸­ç‰©ä½“åŠä¾èµ–èµ„æºï¼ŒbundleRecordé…ç½®æ–‡ä»¶ï¼Œoutputæ–‡ä»¶
+		1.1 é€‰ä¸­ç‰©ä½“åŠä¾èµ–èµ„æº
+				ç”±Unityè‡ªåŠ¨è·å–ä¾èµ–
 		1.2 BundleRecord.bytes
-				ÎÄ¼ş¿ÉÒÔÓÃÎÄ±¾±à¼­Æ÷´ò¿ª£¬ÒÔĞĞÎª¼ä¸ô£¬PrefabÃû³Æ£¬½Å±¾Êı£¬[½Å±¾Ãû£¬½Å±¾¹ÒÔØÎïÌåË÷Òı]£¬[½Å±¾Ãû£¬½Å±¾¹ÒÔØÎïÌåË÷Òı]¡£¡£¡£¡£¡£
+				æ–‡ä»¶å¯ä»¥ç”¨æ–‡æœ¬ç¼–è¾‘å™¨æ‰“å¼€ï¼Œä»¥è¡Œä¸ºé—´éš”ï¼ŒPrefabåç§°ï¼Œè„šæœ¬æ•°ï¼Œ[è„šæœ¬åï¼Œè„šæœ¬æŒ‚è½½ç‰©ä½“ç´¢å¼•]ï¼Œ[è„šæœ¬åï¼Œè„šæœ¬æŒ‚è½½ç‰©ä½“ç´¢å¼•]ã€‚ã€‚ã€‚ã€‚ã€‚
 		1.3 eventTriggerConfig.bytes
-				Ò»¸öjson¸ñÊ½µÄ¶ş¼¶ÖÆÎÄ¼ş£¬Ïê¼ûAllTriggerToDesingerJson½Å±¾£¬Éè¼ÆÊ±»òÔËĞĞÊ±´¥·¢Æ÷ĞÅÏ¢Àà
+				ä¸€ä¸ªjsonæ ¼å¼çš„äºŒçº§åˆ¶æ–‡ä»¶ï¼Œè¯¦è§AllTriggerToDesingerJsonè„šæœ¬ï¼Œè®¾è®¡æ—¶æˆ–è¿è¡Œæ—¶è§¦å‘å™¨ä¿¡æ¯ç±»
 		1.4 output.bytes
-				°²×°Ä¿Â¼Unity/Editor/Data/MonoBleedingEdge/bin/mcs.bat´¦ÀíºóµÄdllÎÄ¼şµÄ¶ş½øÖÆÎÄ¼ş
-2.ÖÆ×÷AssetBundle°üÂß¼­Á÷³Ì(BundleBuilder)
-	´ò°ü½çÃæ
-		2.1 ÉèÖÃ3ºÍ±£´æÂ·¾¶£¬»á±£´æÔÚconfig.bytesÎÄ¼şÄÚ
-		2.2 ÌîÈë´ò°üPrefab£¬Ñ¡Ôñ´ò°üÆ½Ì¨
-		2.3 ´ò°ü¼ì²é£¬[CheckCollider]->¼ì²éPrefabÎïÌåÉÏËùÓĞ×ÓÎïÌåÓĞMesh×é¼şµÄÊÇ·ñ¶¼ÓĞCollider£¬[CheckOtherConfig]->¼ì²éÆäËûÅäÖÃ
-			  Èç¹û[CheckCollider]²»Í¨¹ıÔòµ¯³öÌáÊ¾¿ò£¬3¸öÑ¡Ïî
-		2.4 ´ò°üÂß¼­
-				[GenerateBundleTriggerSummary]->ÔÚÉú³É¼ÇÂ¼ÕªÒªÇ°ÅäÖÃBundleTrigger¼ÇÂ¼,»á±ê¼Ç±»²Ù×÷ÎïÌå(ĞŞ¸ÄÆäÃû³Æ£¬¸øÆä¹ÒÔØ¶ÔÓ¦Ö´ĞĞ½Å±¾)
-				[GenerateScript]-> ´¦Àí½Å±¾Éú³Édll,Ê¹ÓÃProcess.Start("cmd", cmd)×ª»¯Éú³ÉoutputÎÄ¼ş
-				[PreBuidleHandler]->´ò°üÇ°´¦Àí,Ïú»ÙÁËBundleEventTriggerDesigner×é¼ş
-				[GenerateSummary]->Éú³É¼ÓÔØÒıÓÃ¼ÇÂ¼,Êä³öbundleRecord.bytesÎÄ¼ş
-				[CreateEventTriggerInfoJsonConfig]->Éú³É´¥·¢Æ÷¶ÁÈ¡ÖµµÄjsonÎÄ¼ş
-				[CalculateScale]->¼ÆËãbundle°üÎ§ºĞ´óĞ¡
-				[OpenFile]->´ò°üÍê³Éºó×Ô¶¯´ò¿ªÄ¿Â¼
-	Éè¼ÆÊ¦×é¼ş½çÃæ(Ïê¼ûpdfÎÄµµ)		
+				å®‰è£…ç›®å½•Unity/Editor/Data/MonoBleedingEdge/bin/mcs.batå¤„ç†åçš„dllæ–‡ä»¶çš„äºŒè¿›åˆ¶æ–‡ä»¶
+2.åˆ¶ä½œAssetBundleåŒ…é€»è¾‘æµç¨‹(BundleBuilder)
+	æ‰“åŒ…ç•Œé¢
+		2.1 è®¾ç½®3å’Œä¿å­˜è·¯å¾„ï¼Œä¼šä¿å­˜åœ¨config.bytesæ–‡ä»¶å†…
+		2.2 å¡«å…¥æ‰“åŒ…Prefabï¼Œé€‰æ‹©æ‰“åŒ…å¹³å°
+		2.3 æ‰“åŒ…æ£€æŸ¥ï¼Œ[CheckCollider]->æ£€æŸ¥Prefabç‰©ä½“ä¸Šæ‰€æœ‰å­ç‰©ä½“æœ‰Meshç»„ä»¶çš„æ˜¯å¦éƒ½æœ‰Colliderï¼Œ[CheckOtherConfig]->æ£€æŸ¥å…¶ä»–é…ç½®
+			  å¦‚æœ[CheckCollider]ä¸é€šè¿‡åˆ™å¼¹å‡ºæç¤ºæ¡†ï¼Œ3ä¸ªé€‰é¡¹
+		2.4 æ‰“åŒ…é€»è¾‘
+				[GenerateBundleTriggerSummary]->åœ¨ç”Ÿæˆè®°å½•æ‘˜è¦å‰é…ç½®BundleTriggerè®°å½•,ä¼šæ ‡è®°è¢«æ“ä½œç‰©ä½“(ä¿®æ”¹å…¶åç§°ï¼Œç»™å…¶æŒ‚è½½å¯¹åº”æ‰§è¡Œè„šæœ¬)
+				[GenerateScript]-> å¤„ç†è„šæœ¬ç”Ÿæˆdll,ä½¿ç”¨Process.Start("cmd", cmd)è½¬åŒ–ç”Ÿæˆoutputæ–‡ä»¶
+				[PreBuidleHandler]->æ‰“åŒ…å‰å¤„ç†,é”€æ¯äº†BundleEventTriggerDesignerç»„ä»¶
+				[GenerateSummary]->ç”ŸæˆåŠ è½½å¼•ç”¨è®°å½•,è¾“å‡ºbundleRecord.bytesæ–‡ä»¶
+				[CreateEventTriggerInfoJsonConfig]->ç”Ÿæˆè§¦å‘å™¨è¯»å–å€¼çš„jsonæ–‡ä»¶
+				[CalculateScale]->è®¡ç®—bundleåŒ…å›´ç›’å¤§å°
+				[OpenFile]->æ‰“åŒ…å®Œæˆåè‡ªåŠ¨æ‰“å¼€ç›®å½•
+	è®¾è®¡å¸ˆç»„ä»¶ç•Œé¢(è¯¦è§pdfæ–‡æ¡£)		
 	
-3.¶ÁÈ¡AssetBundle°ü(AssetBundleManager)
-	3.1 [LoadAssetBundle]¼ÓÔØÎïÌå¼°ÅäÖÃ²ÄÖÊºÍshander£¬ÒÔ¼°¹ÒÔØ½Å±¾
-		3.1.1 ¼ÓÔØËùÓĞ°üÄÚShader±£´æµ½List
-		3.1.2 ResetAllMaterial¶ÁÈ¡°üÄÚMaterialºÍ¼ÇÂ¼µÄShaderÆ¥Åä£¬ĞÂ½¨MaterialÕÒ¹¤³ÌÄÚShaderÈôÎŞÔò¸øMaterial¸³ÖµListµÄShader
-		3.1.3 AssetBundle.LoadAsset<TextAsset>("bundleRecord")¼ÓÔØbundleRecordÎÄ¼ş£¬°´ÕÕÖÆ×÷Ê±µÄ¹æÔò¸øList(gameObjectNamesºÍscriptNames)×ö¶ÔÒ»¶ÔÒ»¼ÇÂ¼
-		3.1.4 AssetBundle.LoadAsset<TextAsset>("output")¼ÓÔØoutputÎÄ¼ş£¬ 
+3.è¯»å–AssetBundleåŒ…(AssetBundleManager)
+	3.1 [LoadAssetBundle]åŠ è½½ç‰©ä½“åŠé…ç½®æè´¨å’Œshanderï¼Œä»¥åŠæŒ‚è½½è„šæœ¬
+		3.1.1 åŠ è½½æ‰€æœ‰åŒ…å†…Shaderä¿å­˜åˆ°List
+		3.1.2 ResetAllMaterialè¯»å–åŒ…å†…Materialå’Œè®°å½•çš„ShaderåŒ¹é…ï¼Œæ–°å»ºMaterialæ‰¾å·¥ç¨‹å†…Shaderè‹¥æ— åˆ™ç»™Materialèµ‹å€¼Listçš„Shader
+		3.1.3 AssetBundle.LoadAsset<TextAsset>("bundleRecord")åŠ è½½bundleRecordæ–‡ä»¶ï¼ŒæŒ‰ç…§åˆ¶ä½œæ—¶çš„è§„åˆ™ç»™List(gameObjectNameså’ŒscriptNames)åšå¯¹ä¸€å¯¹ä¸€è®°å½•
+		3.1.4 AssetBundle.LoadAsset<TextAsset>("output")åŠ è½½outputæ–‡ä»¶ï¼Œ 
 		3.4.5 System.Reflection.Assembly dll = null; 
-		3.4.6 Éú³Édll dll = System.Reflection.Assembly.Load(asset.bytes);
-		3.4.7 µÃµ½Ä³¸ö½Å±¾ System.Type t = dll.GetType(scriptNames[i])
-		3.4.8 ¸øÄ³¸öÎïÌåÌí¼Ó½Å±¾×é¼ş trans.gameObject.AddComponent(t);
-	3.2 [LoadJsonForTrigger]¼ÓÔØJsonwÅäÖÃ
-		3.2.1 ¼ÓÔØeventTriggerConfig.bytes°´ÕÕAllTriggerToDesingerJson¼ÓÔØ³ÉÀà
-		3.2.2 ¸ù¾İAllTriggerToDesingerJsonĞÅÏ¢ÔÚ¹¤³ÌÄÚ»¹Ô­ÖÆ×÷Ç°BundleEventTriggerInfoÀàĞÅÏ¢£¬°üÀ¨ÎïÌå£¬º¯Êı£¬´¥·¢ÀàĞÍ
-	3.3 [HandleJsonForTrigger]´¦ÀíjsonÎÄ¼ş£¬½«jsonÊı¾İ´¦Àí¸³Öµ¸øBundleEventTrigger×é¼ş
-		3.3.1 [TriggerAssignment]·´ÉäÈ¥µ÷ÓÃÕë¶ÔBundleEventTriggerÖĞÄ³µÄ³õÊ¼»¯º¯ÊıAddTriggerByElement,¶ÔselfBundleEventTriggerInfoµÄListÔö¼ÓÔªËØ
-		3.3.2 ¶şÖÖ·´Éä¸³Öµ·½Ê½£¬Ö±½Óµ÷ÓÃList.AddËãÄÚÖÃ£¬ÔÚ´òÈëdllµÄ½Å±¾ÄÚ¶¨ÒåListµÄÑ¹Èëµ¥¸öÔªËØµÄ³õÊ¼»¯º¯Êı
-		1.5 AssetBundle.Unload(false)ÊÍ·Å×ÊÔ´
-4. ×ÊÔ´Ğ¶ÔØbundle.Unload(false);
+		3.4.6 ç”Ÿæˆdll dll = System.Reflection.Assembly.Load(asset.bytes);
+		3.4.7 å¾—åˆ°æŸä¸ªè„šæœ¬ System.Type t = dll.GetType(scriptNames[i])
+		3.4.8 ç»™æŸä¸ªç‰©ä½“æ·»åŠ è„šæœ¬ç»„ä»¶ trans.gameObject.AddComponent(t);
+	3.2 [LoadJsonForTrigger]åŠ è½½Jsonwé…ç½®
+		3.2.1 åŠ è½½eventTriggerConfig.bytesæŒ‰ç…§AllTriggerToDesingerJsonåŠ è½½æˆç±»
+		3.2.2 æ ¹æ®AllTriggerToDesingerJsonä¿¡æ¯åœ¨å·¥ç¨‹å†…è¿˜åŸåˆ¶ä½œå‰BundleEventTriggerInfoç±»ä¿¡æ¯ï¼ŒåŒ…æ‹¬ç‰©ä½“ï¼Œå‡½æ•°ï¼Œè§¦å‘ç±»å‹
+	3.3 [HandleJsonForTrigger]å¤„ç†jsonæ–‡ä»¶ï¼Œå°†jsonæ•°æ®å¤„ç†èµ‹å€¼ç»™BundleEventTriggerç»„ä»¶
+		3.3.1 [TriggerAssignment]åå°„å»è°ƒç”¨é’ˆå¯¹BundleEventTriggerä¸­æŸçš„åˆå§‹åŒ–å‡½æ•°AddTriggerByElement,å¯¹selfBundleEventTriggerInfoçš„Listå¢åŠ å…ƒç´ 
+		3.3.2 äºŒç§åå°„èµ‹å€¼æ–¹å¼ï¼Œç›´æ¥è°ƒç”¨List.Addç®—å†…ç½®ï¼Œåœ¨æ‰“å…¥dllçš„è„šæœ¬å†…å®šä¹‰Listçš„å‹å…¥å•ä¸ªå…ƒç´ çš„åˆå§‹åŒ–å‡½æ•°
+		1.5 AssetBundle.Unload(false)é‡Šæ”¾èµ„æº
+4. èµ„æºå¸è½½bundle.Unload(false);
 	
 	    
 
-¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
-ÍØÕ¹;
-1. ´úÂëÅäÖÃÊı¾İ±£´æÎÊÌâ
-2. ¿ÉÖ±½Ó´ÓAssetÖĞÍÆ×§µ½Ãæ°åµÄEditor²Ù×÷ÔõÃ´ÊµÏÖ
-3. Process.Start("cmd", cmd)´ò¿ªÍâ²¿³ÌĞò¼°cmd×Ö·û´®ÃüÁîĞĞĞ´·¨
-4. AssetBundle´ò°üºó²ÄÖÊºÍShader¶ªÊ§ÎïÌå´¦Àí 
-5. AssetBundle°üÊı¾İ¶àÔª»¯(ÄÜ°üº¬¸÷ÖÖÀàĞÍµÄÎÄ¼ş)
-6. ·´ÉäÔÚÔËĞĞÊ±µÄÖØÒª×÷ÓÃ
-	6.1 ¼ÓÔØ¶ş¼¶ÖÆÎÄ¼şÎªdll
+â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”
+æ‹“å±•;
+1. ä»£ç é…ç½®æ•°æ®ä¿å­˜é—®é¢˜
+2. å¯ç›´æ¥ä»Assetä¸­æ¨æ‹½åˆ°é¢æ¿çš„Editoræ“ä½œæ€ä¹ˆå®ç°
+3. Process.Start("cmd", cmd)æ‰“å¼€å¤–éƒ¨ç¨‹åºåŠcmdå­—ç¬¦ä¸²å‘½ä»¤è¡Œå†™æ³•
+4. AssetBundleæ‰“åŒ…åæè´¨å’ŒShaderä¸¢å¤±ç‰©ä½“å¤„ç† 
+5. AssetBundleåŒ…æ•°æ®å¤šå…ƒåŒ–(èƒ½åŒ…å«å„ç§ç±»å‹çš„æ–‡ä»¶)
+6. åå°„åœ¨è¿è¡Œæ—¶çš„é‡è¦ä½œç”¨
+	6.1 åŠ è½½äºŒçº§åˆ¶æ–‡ä»¶ä¸ºdll
 		System.Reflection.Assembly dll = null;
 		dll = System.Reflection.Assembly.Load(asset.bytes);
-	6.2 ¸ù¾İÃû³Æ¹ÒÔØÒ»¸ö½Å±¾
+	6.2 æ ¹æ®åç§°æŒ‚è½½ä¸€ä¸ªè„šæœ¬
 	   System.Type t = dll.GetType(scriptNames[i]);
        gameObject.AddComponent(t);
-	6.3 ¸ù¾İÃû³Æ»ñÈ¡Ò»¸ö½Å±¾
+	6.3 æ ¹æ®åç§°è·å–ä¸€ä¸ªè„šæœ¬
             foreach (MonoBehaviour mb in targetobject.GetComponents<BundleEventInfoBase>())
             {
-				//ÅĞ¶ÏÊÇ·ñÎª¼Ì³Ğ¹ØÏµ£¬[mb is BundleEventInfoBase]Ò²¿ÉÒÔ
+				//åˆ¤æ–­æ˜¯å¦ä¸ºç»§æ‰¿å…³ç³»ï¼Œ[mb is BundleEventInfoBase]ä¹Ÿå¯ä»¥
                 if (mb.GetType().IsSubclassOf(typeof(BundleEventInfoBase)))
                 {
                     BundleEventInfoBase ip = (BundleEventInfoBase)mb;
                     ac.SupportPRS = ip.supportPRS();
                 }
             }
-	6.4 »ñÈ¡Ò»¸öÖØÔØ·½·¨£¬ÕâÀïÊ¾·¶µ÷ÓÃBundleEventTriggerÀàµÄAddTriggerByElement·½·¨
-		 //tÎªÉÏÉÏÃæ»ñÈ¡µÄ×é¼ş£¬¼°BundleEventTrigger½Å±¾
+	6.4 è·å–ä¸€ä¸ªé‡è½½æ–¹æ³•ï¼Œè¿™é‡Œç¤ºèŒƒè°ƒç”¨BundleEventTriggerç±»çš„AddTriggerByElementæ–¹æ³•
+		 //tä¸ºä¸Šä¸Šé¢è·å–çš„ç»„ä»¶ï¼ŒåŠBundleEventTriggerè„šæœ¬
 		 Type type = t.GetType();
-		//·´Éä»ñÈ¡ÖØÔØµÄº¯Êı
-		//±ê¼Ç   »ñÈ¡BundleEventTriggerType²ÎÊıµÄº¯Êı»á»ñÈ¡²»µ½£¬¿ÉÄÜÊÇ²»ÔÊĞíÓĞ×Ô¶¨ÒåÀàĞÍ°É
+		//åå°„è·å–é‡è½½çš„å‡½æ•°
+		//æ ‡è®°   è·å–BundleEventTriggerTypeå‚æ•°çš„å‡½æ•°ä¼šè·å–ä¸åˆ°ï¼Œå¯èƒ½æ˜¯ä¸å…è®¸æœ‰è‡ªå®šä¹‰ç±»å‹å§
 		//MethodInfo method = type.GetMethod("AddTriggerByElement", new Type[] { typeof(GameObject), typeof(UnityEngine.Object), typeof(BundleEventTriggerType) });
 		MethodInfo method = type.GetMethod("AddTriggerByElement", new Type[] { typeof(GameObject), typeof(UnityEngine.Object), typeof(int) });
 		for (int i = 0; i < triggerInfoCache[value].Count; i++)
@@ -113,7 +113,7 @@ BundleEventTrigger°æ
                method.Invoke(t, parameters);
          }
 
-7. ²Î¿¼ UnityÖĞÀûÓÃC#µÄ·´Éä»úÖÆÊä³ö·ºĞÍÀàT¼°ÆäÄÚÇ¶ListµÄÊôĞÔÖµ https://blog.csdn.net/chy_xfn/article/details/82421255
-8. ¶ÁÈ¡×¢²á±íµÃµ½Unity°²×°Â·¾¶ RegistryKey key = Registry.CurrentUser.OpenSubKey(@"Software\Unity Technologies\Installer\Unity");
-9. BundleEventTrigger´úÂë²Î¿¼EventTriggerÔ´Âë
-¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+7. å‚è€ƒ Unityä¸­åˆ©ç”¨C#çš„åå°„æœºåˆ¶è¾“å‡ºæ³›å‹ç±»TåŠå…¶å†…åµŒListçš„å±æ€§å€¼ https://blog.csdn.net/chy_xfn/article/details/82421255
+8. è¯»å–æ³¨å†Œè¡¨å¾—åˆ°Unityå®‰è£…è·¯å¾„ RegistryKey key = Registry.CurrentUser.OpenSubKey(@"Software\Unity Technologies\Installer\Unity");
+9. BundleEventTriggerä»£ç å‚è€ƒEventTriggeræºç 
+â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”

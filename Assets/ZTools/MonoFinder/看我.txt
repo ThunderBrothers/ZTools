@@ -1,7 +1,7 @@
-¹¤¾ßÔ´×Ô 
+ï»¿å·¥å…·æºè‡ª 
   	 https://www.cnblogs.com/xxxtony/p/7650430.html
 
-¸üÓĞÒâË¼µÄÒ»¸ö
-UnityÖĞ²éÕÒ½Å±¾±»ÄÄĞ©Prefab»ò³¡¾°ÒıÓÃ
+æ›´æœ‰æ„æ€çš„ä¸€ä¸ª
+Unityä¸­æŸ¥æ‰¾è„šæœ¬è¢«å“ªäº›Prefabæˆ–åœºæ™¯å¼•ç”¨
 
  	https://www.cnblogs.com/cynchanpin/p/7127724.html
