@@ -75,26 +75,23 @@ namespace ZTools.FileIO
             //StartCoroutine(LoadByWWW(fileFullName));
             StartCoroutine(LoadByWebrequst(fileFullName));
             //LoadByFile(loadPath);
-            //byte[] bytes = new byte[2];
+            //byte[] bytes = File.ReadAllBytes(fileFullName);
             //LoadByMemory(bytes);
         }
+        /// <summary>
+        /// 重新获取一次Bundle文件转为www.bytes保存到本地
+        /// </summary>
+        /// <param name="dataPath"></param>
+        /// <param name="savePath"></param>
+        /// <returns></returns>
         IEnumerator DownloadAssetBundleAndSave(string dataPath,string savePath)
         {
             WWW www = new WWW(dataPath);
             yield return www;
             if (www.isDone)
             {
-                SaveAssetBundle(savePath, www.bytes, www.bytes.Length);
+                IOBase.WriteByBytes(savePath, www.bytes, www.bytes.Length);
             }
-        }
-        private void SaveAssetBundle(string fileName, byte[] bytes, int count)
-        {
-            FileInfo fileInfo = new FileInfo(fileName);
-            FileStream fs = fileInfo.Create();
-            fs.Write(bytes, 0, count);
-            fs.Flush();
-            fs.Close();
-            fs.Dispose();
         }
         #region 不同的Load方式
         private IEnumerator LoadByWWW(string path)
