@@ -23,7 +23,7 @@ namespace ZTools.EditorExample
         [ContextMenu("LoadAsset")]
         public void LoadAsset()
         {
-            string path = "Assets/ZTools/EditorExample/Recoures/BulletAsset.asset";
+            string path = "Assets/ZTools/EditorExample/LoadAssetConfig/Recoures/BulletAsset.asset";
             bullet = AssetDatabase.LoadAssetAtPath<CABullet>(path);
         }
         //脚本右键菜单增加LoadAsset

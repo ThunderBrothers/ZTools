@@ -145,7 +145,7 @@ namespace ZTools.EditorExample
                     var menu = new GenericMenu();
                     //Mod文件夹下的资产GUID
                     //得到GUIDs字符串数组
-                    var guids = AssetDatabase.FindAssets("", new[] { "Assets/ZTools/EditorExample/Prefabs/Mod" });
+                    var guids = AssetDatabase.FindAssets("", new[] { "Assets/ZTools/EditorExample/CI_List/Prefabs/Mod" });
                     //遍历Mob文件夹下的子目录
                     foreach(var guid in guids)
                     {
@@ -156,7 +156,7 @@ namespace ZTools.EditorExample
                             ClickHandLer,new WaveCreationParams() { Type = MobWave.WaveType.Mobs, _Path = path }); 
                     }
                     //第二个Boss文件夹
-                    guids = AssetDatabase.FindAssets("", new[] { "Assets/ZTools/EditorExample/Prefabs/Boss" });
+                    guids = AssetDatabase.FindAssets("", new[] { "Assets/ZTools/EditorExample/CI_List/Prefabs/Boss" });
                     foreach(var guid in guids)
                     {
                         var path = AssetDatabase.GUIDToAssetPath(guid);

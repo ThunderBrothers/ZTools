@@ -35,15 +35,15 @@ namespace JhonKit
         }
         private GUIContent _titleTexture;
 
-        private string mLableStr = "ÕâÊÇ²»¿ÉÊäÈë£¬²»¿ÉÑ¡µÄÎÄ±¾";
-        private string mCustomStr = "ÕâÊÇ×Ô¶¨ÒåÎÄ±¾ÑùÊ½";
-        private string mLabelField = "¿ÉÑ¡£¬²»¿ÉÊäÈë";
+        private string mLableStr = "ï¿½ï¿½ï¿½Ç²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ë£¬ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½Ä±ï¿½";
+        private string mCustomStr = "ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½Ê½";
+        private string mLabelField = "ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
 
-        private string mTextField = "ÎÄ±¾ÊäÈë¿ò";
+        private string mTextField = "ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
         private int mIntField = 354888562;
         private float mFloatField = 0.354888562f;
 
-        private string mTextArea = "ÎÄ±¾ÊäÈëÇøÓò";
+        private string mTextArea = "ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
         private string mPasswordField_1 = string.Empty;
         private string mPasswordField_2 = string.Empty;
 
@@ -166,14 +166,14 @@ namespace JhonKit
             if (mDrawSecWindow == true)
             {
                 BeginWindows();
-                mSecWindowRect = GUILayout.Window(354888562, mSecWindowRect, SecondWindow, "¶þ¼¶µ¯´°", GUI.skin.window);
+                mSecWindowRect = GUILayout.Window(354888562, mSecWindowRect, SecondWindow, "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", GUI.skin.window);
                 EndWindows();
             }
 
             if (mDrawGraphWindow == true)
             {
                 BeginWindows();
-                mSecWindowRect = GUILayout.Window(354888, mSecWindowRect, DrawGraphWindow, "Í¼ÐÎ»æÖÆ", GUI.skin.window);
+                mSecWindowRect = GUILayout.Window(354888, mSecWindowRect, DrawGraphWindow, "Í¼ï¿½Î»ï¿½ï¿½ï¿½", GUI.skin.window);
                 EndWindows();
             }
         }
@@ -263,7 +263,7 @@ namespace JhonKit
 
             using (new EditorGUILayout.VerticalScope(GUI.skin.box))
             {
-                //ÐÞ¸Ä±³¾°ÑÕÉ«;
+                //ï¿½Þ¸Ä±ï¿½ï¿½ï¿½ï¿½ï¿½É«;
                 GUI.backgroundColor = Color.gray;
                 mVector3Field = EditorGUILayout.Vector3Field("Vector3Field", mVector3Field);
                 GUI.backgroundColor = tempOrgColor;
@@ -273,7 +273,7 @@ namespace JhonKit
 
             using (new EditorGUILayout.VerticalScope(GUI.skin.box))
             {
-                //ÐÞ¸Ä±³¾°ÑÕÉ«;
+                //ï¿½Þ¸Ä±ï¿½ï¿½ï¿½ï¿½ï¿½É«;
                 GUI.backgroundColor = Color.green;
                 mRectField = EditorGUILayout.RectField("RectField", mRectField);
                 GUI.backgroundColor = tempOrgColor;
@@ -281,15 +281,15 @@ namespace JhonKit
         }
         private void OtherEdiotorUtility()
         {
-            if (GUILayout.Button(new GUIContent("µ¯³öÏµÍ³ÌáÊ¾ÏûÏ¢", "µ÷ÓÃÏµÍ³¼¶±ðµÄÌáÊ¾ÐÅÏ¢")))
+            if (GUILayout.Button(new GUIContent("ï¿½ï¿½ï¿½ï¿½ÏµÍ³ï¿½ï¿½Ê¾ï¿½ï¿½Ï¢", "ï¿½ï¿½ï¿½ï¿½ÏµÍ³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Ï¢")))
             {
-                ShowNotification(new GUIContent("ÕâÊÇÀ´×Ô ShowNotification µÄµ¯´°ÏûÏ¢"));
+                ShowNotification(new GUIContent("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ShowNotification ï¿½Äµï¿½ï¿½ï¿½ï¿½ï¿½Ï¢"));
             }
 
             bool tempButtonChange = false;
 
-            if (GUILayout.Button(new GUIContent("ÏÔÊ¾¶þ¼¶´°¿Ú", "´°¿ÚÄÚµÄ¶þ¼¶µ¯´°"))) { mDrawSecWindow = true; tempButtonChange = true; }
-            if (GUILayout.Button(new GUIContent("»æÖÆÍ¼ÐÎ", "»æÖÆÍ¼ÐÎµÄÊ¾Àý"))) { mDrawGraphWindow = true; tempButtonChange = true; }
+            if (GUILayout.Button(new GUIContent("ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½ï¿½ÚµÄ¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"))) { mDrawSecWindow = true; tempButtonChange = true; }
+            if (GUILayout.Button(new GUIContent("ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½Í¼ï¿½Îµï¿½Ê¾ï¿½ï¿½"))) { mDrawGraphWindow = true; tempButtonChange = true; }
             if (tempButtonChange && (mDrawGraphWindow || mDrawSecWindow))
             {
                 mSecWindowRect = new Rect((int)position.width >> 2, (int)position.height >> 2, (int)position.width >> 1, (int)position.height >> 1);
@@ -299,7 +299,7 @@ namespace JhonKit
 
             using (new EditorGUILayout.VerticalScope(GUI.skin.box))
             {
-                GUILayout.Label("EditorUtilityÏà¹Ø");
+                GUILayout.Label("EditorUtilityï¿½ï¿½ï¿½");
                 if (string.IsNullOrEmpty(mOpenFilePanel) == false)
                 {
                     EditorGUILayout.LabelField("OpenFilePanel SelectPath", mOpenFilePanel);
@@ -320,8 +320,8 @@ namespace JhonKit
 
                 if (GUILayout.Button("DisplayDialog"))
                 {
-                    bool tempResult = EditorUtility.DisplayDialog("ÕâÊÇÒ»¸öÏµÍ³¶þ´ÎÈ·ÈÏ´°¿Ú", "ÎÄ±¾ÄÚÈÝ", "È·ÈÏ", "È¡Ïû");
-                    string tempTip = tempResult ? "Äã°´ÏÂÁË¶þ´ÎÈ·ÈÏ" : "ÄãÈ¡ÏûÁË¶þ´ÎÈ·ÈÏ";
+                    bool tempResult = EditorUtility.DisplayDialog("ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ÏµÍ³ï¿½ï¿½ï¿½ï¿½È·ï¿½Ï´ï¿½ï¿½ï¿½", "ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½", "È·ï¿½ï¿½", "È¡ï¿½ï¿½");
+                    string tempTip = tempResult ? "ï¿½ã°´ï¿½ï¿½ï¿½Ë¶ï¿½ï¿½ï¿½È·ï¿½ï¿½" : "ï¿½ï¿½È¡ï¿½ï¿½ï¿½Ë¶ï¿½ï¿½ï¿½È·ï¿½ï¿½";
                     ShowNotification(new GUIContent(tempTip));
                 }
 
@@ -329,7 +329,7 @@ namespace JhonKit
         }
         private void SceneGUI(SceneView varSceneView)
         {
-            if (Event.current.type != EventType.mouseMove) return;
+            if (Event.current.type != EventType.MouseMove) return;
 
             SceneMousPos = Event.current.mousePosition;
             mSceneRayHitObj = null;
@@ -342,12 +342,12 @@ namespace JhonKit
         }
         private void SecondWindow(int varWindowID)
         {
-            Application.targetFrameRate = EditorGUILayout.IntSlider("ÏÞ¶¨Ö¡ÂÊ", Application.targetFrameRate, 10, 300);
-            Application.runInBackground = EditorGUILayout.Toggle("ÔÊÐíUnityºóÌ¨ÔËÐÐ", Application.runInBackground);
+            Application.targetFrameRate = EditorGUILayout.IntSlider("ï¿½Þ¶ï¿½Ö¡ï¿½ï¿½", Application.targetFrameRate, 10, 300);
+            Application.runInBackground = EditorGUILayout.Toggle("ï¿½ï¿½ï¿½ï¿½Unityï¿½ï¿½Ì¨ï¿½ï¿½ï¿½ï¿½", Application.runInBackground);
             mObjectField = EditorGUILayout.ObjectField(new GUIContent("ObjectField"), mObjectField, typeof(GameObject), true);
-            EditorGUILayout.Vector3Field("Êó±êÔÚSceneÊÓÍ¼µÄ×ø±ê", SceneMousPos);
-            EditorGUILayout.Vector3Field("Êó±êÔÚµ±Ç°¶þ¼¶´°¿Ú×ø±ê", Event.current.mousePosition);
-            mSceneRayHitObj = (GameObject)EditorGUILayout.ObjectField("µ±Ç°Êó±êËùÔÚµÄGameObject", mSceneRayHitObj != null ? mSceneRayHitObj : null, typeof(GameObject), true);
+            EditorGUILayout.Vector3Field("ï¿½ï¿½ï¿½ï¿½ï¿½Sceneï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", SceneMousPos);
+            EditorGUILayout.Vector3Field("ï¿½ï¿½ï¿½ï¿½Úµï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", Event.current.mousePosition);
+            mSceneRayHitObj = (GameObject)EditorGUILayout.ObjectField("ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½GameObject", mSceneRayHitObj != null ? mSceneRayHitObj : null, typeof(GameObject), true);
 
             GUILayout.Label("UsedTextureCount: " + UnityStats.usedTextureCount);
             GUILayout.Label("UsedTextureMemorySize: " + (UnityStats.usedTextureMemorySize / 1000000f + "Mb"));
@@ -363,15 +363,15 @@ namespace JhonKit
             GUILayout.Label("Triangles: " + UnityStats.triangles);
             GUILayout.Label("Vertices: " + UnityStats.vertices);
 
-            if (GUILayout.Button("¹Ø±Õ¶þ¼¶´°¿Ú")) { mDrawSecWindow = false; }
+            if (GUILayout.Button("ï¿½Ø±Õ¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½")) { mDrawSecWindow = false; }
             GUI.DragWindow();
         }
         private void DrawGraphWindow(int varWindowID)
         {
             mCapSize = EditorGUILayout.IntField("Size", mCapSize);
-            mCapEuler = EditorGUILayout.Vector3Field("Ðý×ª½Ç¶È", mCapEuler);
+            mCapEuler = EditorGUILayout.Vector3Field("ï¿½ï¿½×ªï¿½Ç¶ï¿½", mCapEuler);
 
-            if (GUILayout.Button("¹Ø±Õ»æÖÆÍ¼ÐÎ")) { mDrawGraphWindow = false; }
+            if (GUILayout.Button("ï¿½Ø±Õ»ï¿½ï¿½ï¿½Í¼ï¿½ï¿½")) { mDrawGraphWindow = false; }
 
             Handles.color = Color.red;
             Handles.DrawLine(new Vector2(75, 100), new Vector3(150, 200));

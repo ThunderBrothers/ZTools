@@ -4,17 +4,18 @@
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 20022d6efbc4cce40a7e10517d988428, type: 3}
   m_Name: BulletAsset
   m_EditorClassIdentifier: 
-  Type: 0
-  Speed: 0
+  Type: 1
+  Speed: 5
   Damage: 0
-  eff: {fileID: 0}
+  eff: {fileID: 122718, guid: c0e05b72fe16c2a45a4ab98c44e65007, type: 3}
   highPassRange:
     min: 0
-    max: 1100
+    max: 10528.571
