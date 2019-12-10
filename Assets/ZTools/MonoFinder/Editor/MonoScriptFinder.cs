@@ -75,7 +75,7 @@ namespace ZTools.MonoScriptFinder
             GUILayout.Label("脚本类型");
             //得到脚本类型
             scriptObj = (MonoScript)EditorGUILayout.ObjectField(scriptObj, typeof(MonoScript), true);
-            if (GUILayout.Button("Find"))
+            if (GUILayout.Button("FindScript"))
             {
                 Claer();
                 //查找选择的
@@ -114,6 +114,21 @@ namespace ZTools.MonoScriptFinder
                     }
                 }
             }
+            if (GUILayout.Button("FindMissingComponent"))
+            {
+                Claer();
+                //得到所有节点
+                Transform[] root = Transform.FindObjectsOfType<Transform>();
+                foreach (Transform t in root)
+                {
+                    roots.Add(t);
+                }
+                loopCount = 0;
+                foreach (Transform t in roots)
+                {
+                    FindMissingComponent(t);
+                }
+            }
             if (result.Count > 0)
             {
                 foreach (Transform t in result)
@@ -145,6 +160,31 @@ namespace ZTools.MonoScriptFinder
                     foreach (Transform t in root)
                     {
                         FindScript(t, excavate);
+                    }
+                }
+            }
+        }
+        void FindMissingComponent(Transform root)
+        {
+            List<Component> components = new List<Component>();
+            root.GetComponents(components);
+            foreach (var component in components)
+            {
+                if (!component)
+                {
+                    result.Add(root);
+                    continue;
+                }
+                SerializedObject so = new SerializedObject(component);
+                var iter = so.GetIterator();
+                while (iter.NextVisible(true))
+                {
+                    if (iter.propertyType == SerializedPropertyType.ObjectReference)
+                    {
+                        if (iter.objectReferenceValue == null && iter.objectReferenceInstanceIDValue != 0)
+                        {
+                            result.Add(root);
+                        }
                     }
                 }
             }

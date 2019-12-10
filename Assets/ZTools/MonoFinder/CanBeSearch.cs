@@ -3,6 +3,7 @@ using System.Collections;
 
 public class CanBeSearch : MonoBehaviour {
 
+    public GameObject target;
 	// Use this for initialization
 	void Start () {
 	
