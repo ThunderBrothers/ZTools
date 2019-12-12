@@ -363,7 +363,7 @@ namespace JhonKit
             GUILayout.Label("Triangles: " + UnityStats.triangles);
             GUILayout.Label("Vertices: " + UnityStats.vertices);
 
-            if (GUILayout.Button("�رն�������")) { mDrawSecWindow = false; }
+            if (GUILayout.Button("开启一个测控")) { mDrawSecWindow = false; }
             GUI.DragWindow();
         }
         private void DrawGraphWindow(int varWindowID)

@@ -38,13 +38,13 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -145,6 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  gameObjects: []
 --- !u!23 &1432799508
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -244,12 +245,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1879656462}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 46838b9b9b79412419e92b153378eba2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  gameObjects: []
 --- !u!23 &1879656464
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -341,7 +343,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2081900715
 Transform:
   m_ObjectHideFlags: 0
@@ -369,6 +371,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  gameObjects: []
 --- !u!23 &2081900717
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -454,12 +457,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2145913669}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 46838b9b9b79412419e92b153378eba2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  gameObjects: []
 --- !u!23 &2145913671
 MeshRenderer:
   m_ObjectHideFlags: 0
