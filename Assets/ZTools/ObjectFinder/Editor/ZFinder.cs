@@ -51,6 +51,7 @@ namespace ZTools.Finder
         {
             "物体自身属性",
             "挂载组件",
+            "脚本丢失",
             "被引用",
         };
         private int searcherOptionIndex = 0;
@@ -109,7 +110,7 @@ namespace ZTools.Finder
                 DrawSearchResult();
             }
             #endregion
-            
+
             #region 高级搜索逻辑
             //if (GUILayout.Button("FindMissingComponent"))
             //{
@@ -320,7 +321,9 @@ namespace ZTools.Finder
                 case 1:
                     DrawComponentSearchWindow(); break;
                 case 2:
-                    DrawreFerencedSearchWindow(); break;
+                    DrawrScriptsMissingSearchWindow(); break;
+                case 3:
+                    DrawrFerencedSearchWindow(); break;
                 default: break;
             }
         }
@@ -360,11 +363,21 @@ namespace ZTools.Finder
 
             EditorGUILayout.Space();
         }
+        /// <summary>
+        /// 脚本丢失
+        /// </summary>
+        private void DrawrScriptsMissingSearchWindow()
+        {
+            //using{
 
-        private void DrawreFerencedSearchWindow()
+            //}
+        }
+
+        private void DrawrFerencedSearchWindow()
         {
 
         }
+      
 
         private void DrawSearchResult()
         {
